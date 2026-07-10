@@ -65,7 +65,7 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 
 | Project | Description | Tech |
 |---|---|---|
-| **[aravindb98.github.io](https://github.com/AravindB98/aravindb98.github.io)** | Profile page — live categorized projects | — |
+| **[aravindb98.github.io](https://github.com/AravindB98/aravindb98.github.io)** | Profile page — live categorized projects | HTML |
 | **[cheese-chase-arcade](https://github.com/AravindB98/cheese-chase-arcade)** | 🧀 Ten arcade games + a 10-chapter story mode in a single HTML file. Open-source, zero dependencies. | HTML |
 | **[robust-data-processor](https://github.com/AravindB98/robust-data-processor)** | — | Python |
 <!--PROJECTS:END-->
