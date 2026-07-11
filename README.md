@@ -67,7 +67,9 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 |---|---|---|
 | **[aravindb98.github.io](https://github.com/AravindB98/aravindb98.github.io)** | Profile page — live categorized projects | HTML |
 | **[cheese-chase-arcade](https://github.com/AravindB98/cheese-chase-arcade)** | 🧀 Ten arcade games + a 10-chapter story mode in a single HTML file. Open-source, zero dependencies. | HTML |
+| **[ideas-you-can-picture](https://github.com/AravindB98/ideas-you-can-picture)** | Official website for the Ideas You Can Picture book series by Aravind Balaji | HTML |
 | **[robust-data-processor](https://github.com/AravindB98/robust-data-processor)** | — | Python |
+| **[servique-v2](https://github.com/AravindB98/servique-v2)** | ServiQue v2 — production-ready rewrite of the ServiQue service booking platform (v1: Java Swing/DB4O). Node+TypeScript+Express+Prisma API, React SPA, JWT auth with RBAC, tests, Docker, CI. | TypeScript |
 <!--PROJECTS:END-->
 
 > 🔄 This list updates automatically every day via GitHub Actions — repos made public appear here on the next run.
