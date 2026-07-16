@@ -5,8 +5,11 @@ Fetches all PUBLIC, non-fork repos for the user and rewrites the section
 between <!--PROJECTS:START--> and <!--PROJECTS:END-->. Any repo flipped from
 private to public appears automatically on the next run.
 
-Categorization: GitHub repo topics win (ai, machine-learning, computer-vision,
-quantum, reinforcement-learning); otherwise keyword rules on name+description.
+A repo can appear under MULTIPLE categories. Categorization order:
+1. OVERRIDES (explicit repo -> [categories]) wins entirely.
+2. GitHub repo topics add categories via TOPIC_MAP.
+3. Keyword rules on name+description add categories.
+4. No match -> fallback "Tools & Other".
 """
 import json
 import re
@@ -16,42 +19,75 @@ import urllib.request
 USER = "AravindB98"
 README = sys.argv[1] if len(sys.argv) > 1 else "README.md"
 
-CATEGORIES = [
-    ("🤖 AI & Agentic Systems", ["agent", "multi-agent", "crewai", "langgraph",
-     "llm", "rag", "knowledge-graph", "knowledge graph", "code review",
-     "research assistant", "ai "]),
-    ("👁️ Computer Vision", ["vision", "cnn", "pose", "densepose", "camera",
-     "recognition", "image", "opencv", "yolo", "detection"]),
-    ("🧠 Machine Learning & RL", ["reinforcement", "fine-tun", "qlora",
-     "machine-learning", "machine learning", "deep-learning",
-     "pytorch", "neural"]),
-    ("⚛️ Quantum AI", ["quantum", "qema", "pennylane"]),
-    ("🛠️ Tools & Other", []),  # fallback
-]
+AI = "🤖 AI & Agentic Systems"
+CV = "👁️ Computer Vision & Robotics"
+ML = "🧠 Machine Learning & RL"
+SCI = "🔬 Science & Simulation"
+QUANTUM = "⚛️ Quantum"
+DOMAIN = "🌍 Domain Platforms (Health · Climate · Fintech · Civic · Space)"
+TOOLS = "🛠️ Tools & Other"
 
-TOPIC_MAP = {
-    "computer-vision": "👁️ Computer Vision",
-    "quantum": "⚛️ Quantum AI",
-    "quantum-computing": "⚛️ Quantum AI",
-    "reinforcement-learning": "🧠 Machine Learning & RL",
-    "machine-learning": "🧠 Machine Learning & RL",
-    "ai": "🤖 AI & Agentic Systems",
-    "agents": "🤖 AI & Agentic Systems",
-    "llm": "🤖 AI & Agentic Systems",
+CATEGORY_ORDER = [AI, CV, ML, SCI, QUANTUM, DOMAIN, TOOLS]
+
+# Keyword rules — a repo picks up EVERY category whose keywords match.
+KEYWORDS = {
+    AI: ["agent", "multi-agent", "crewai", "langgraph", "llm", "rag",
+         "knowledge-graph", "knowledge graph", "code review", "copilot",
+         "research assistant", "fact-check", "citation", "hallucination",
+         "benchmark", "ai "],
+    CV: ["vision", "cnn", "pose", "densepose", "camera", "recognition",
+         "image", "opencv", "yolo", "detection", "robot", "embodied"],
+    ML: ["reinforcement", "fine-tun", "qlora", "machine-learning",
+         "machine learning", "deep-learning", "pytorch", "neural",
+         "forecasting", "generative", "surrogate"],
+    SCI: ["physics", "simulation", "differentiable", "molecular", "chemical",
+          "chemistry", "rdkit", "lean 4", "math", "pde", "orbit", "sgp4",
+          "propagation", "conjunction", "satellite"],
+    QUANTUM: ["quantum", "qema", "pennylane"],
+    DOMAIN: ["fhir", "clinical", "healthcare", "prior authorization",
+             "banking", "atm", "iso 8583", "fintech", "climate", "ghg",
+             "carbon", "political", "legislative", "election", "agriculture",
+             "osint", "intelligence platform", "ads-b", "ais", "space operations"],
 }
 
-# Manual overrides where keywords would guess wrong
+TOPIC_MAP = {
+    "computer-vision": CV, "robotics": CV,
+    "quantum": QUANTUM, "quantum-computing": QUANTUM,
+    "reinforcement-learning": ML, "machine-learning": ML, "deep-learning": ML,
+    "ai": AI, "agents": AI, "llm": AI, "rag": AI,
+    "simulation": SCI, "physics": SCI, "chemistry": SCI, "space": SCI,
+    "healthcare": DOMAIN, "fintech": DOMAIN, "climate": DOMAIN,
+}
+
+# Manual overrides where keywords would guess wrong: repo -> list of categories
 OVERRIDES = {
-    "Smart-Trolley": "👁️ Computer Vision",
-    "RuView": "👁️ Computer Vision",
-    "RL_Codesentinel": "🧠 Machine Learning & RL",
-    "Projects": "🧠 Machine Learning & RL",
-    "qemag-validation": "⚛️ Quantum AI",
-    "CodeSentinel": "🤖 AI & Agentic Systems",
-    "Cerebro": "🤖 AI & Agentic Systems",
-    "medigraph-ai": "🤖 AI & Agentic Systems",
-    "ch09-grounding-agents-in-evidence": "🤖 AI & Agentic Systems",
-    "cheese-chase-arcade": "🛠️ Tools & Other",
+    "civisynth": [AI, DOMAIN],
+    "omnicanon": [AI],
+    "verimathix": [AI, SCI],
+    "physweave": [ML, SCI],
+    "carbonoscope": [ML, DOMAIN],
+    "quantumteller": [QUANTUM, DOMAIN],
+    "orbistra": [SCI, DOMAIN],
+    "ClearAuth": [DOMAIN],
+    "alchemind": [ML, SCI],
+    "agrocortex": [AI, CV, DOMAIN],
+    "WardSight": [AI, DOMAIN],
+    "Foglight": [AI],
+    "everycam": [CV],
+    "Smart-Trolley": [CV],
+    "RuView": [CV],
+    "RL_Codesentinel": [ML],
+    "Projects": [ML],
+    "qemag-validation": [QUANTUM],
+    "CodeSentinel": [AI],
+    "Cerebro": [AI],
+    "medigraph-ai": [AI, DOMAIN],
+    "ch09-grounding-agents-in-evidence": [AI],
+    "cheese-chase-arcade": [TOOLS],
+    "servique-v2": [TOOLS],
+    "robust-data-processor": [TOOLS],
+    "ideas-you-can-picture": [TOOLS],
+    "aravindb98.github.io": [TOOLS],
 }
 
 SKIP = {USER, "websiteab"}  # profile repo itself + site repo
@@ -65,28 +101,33 @@ def fetch(url):
 
 
 def categorize(repo):
+    """Return the ordered list of categories this repo belongs to."""
     if repo["name"] in OVERRIDES:
         return OVERRIDES[repo["name"]]
+    cats = set()
     for t in repo.get("topics") or []:
         if t in TOPIC_MAP:
-            return TOPIC_MAP[t]
+            cats.add(TOPIC_MAP[t])
     text = (repo["name"] + " " + (repo["description"] or "")).lower()
-    for cat, keys in CATEGORIES:
+    for cat, keys in KEYWORDS.items():
         if any(k in text for k in keys):
-            return cat
-    return "🛠️ Tools & Other"
+            cats.add(cat)
+    if not cats:
+        cats.add(TOOLS)
+    return [c for c in CATEGORY_ORDER if c in cats]
 
 
 def main():
     repos = fetch(f"https://api.github.com/users/{USER}/repos?per_page=100&sort=updated")
     repos = [r for r in repos if not r["fork"] and not r["private"] and r["name"] not in SKIP]
 
-    buckets = {cat: [] for cat, _ in CATEGORIES}
+    buckets = {cat: [] for cat in CATEGORY_ORDER}
     for r in repos:
-        buckets[categorize(r)].append(r)
+        for cat in categorize(r):
+            buckets[cat].append(r)
 
     lines = []
-    for cat, _ in CATEGORIES:
+    for cat in CATEGORY_ORDER:
         if not buckets[cat]:
             continue
         lines.append(f"### {cat}\n")
