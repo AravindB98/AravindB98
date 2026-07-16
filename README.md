@@ -24,7 +24,7 @@ VP of R&D @ AI Skunkworks, Northeastern University · Boston, MA
 Most engineers ship code — I ship *research that ships back*. I'm the **author of [QEMA-G](https://zenodo.org/records/18664794)**, a quantum-enhanced memory framework for graph AI published on **Zenodo and TechRxiv**, and **VP of R&D at AI Skunkworks**, the graduate research org at Northeastern University. Four years of production engineering before grad school; now building where multi-agent systems, RAG, and reinforcement learning converge.
 
 - 🎓 MS in Information Systems @ Northeastern University (GPA 3.90/4.0)
-- 🏆 **1st Place, MGEN (now SEIS) Hackathon 2025** — [MSL Practice Gym](https://github.com/AravindB98/MGEN-Hackathon-2025): AI practice platform for Medical Science Liaisons, built in 48 hours for the DNATE challenge ([live demo](https://msl-practice-gym-oats.vercel.app))
+- 🏆 **1st Place, MGEN (now SEIS) Hackathon 2025** — [MSL Practice Gym](https://github.com/AravindB98/MGEN-Hackathon-2025): AI practice platform for Medical Science Liaisons, built in 48 hours for the DNATE challenge
 - 📖 Author of the *Ideas You Can Picture* book series — [find it on Amazon](https://www.amazon.com/dp/B0H6WPWMG4)
 - ⚛️ QEMA-G: [Zenodo](https://zenodo.org/records/18664794) · [TechRxiv](https://www.techrxiv.org/) · [Plain-English explainer](https://open.substack.com/pub/northeasternise/p/the-hub-tax-how-a-hidden-graph-ai) · [Validation code](https://github.com/AravindB98/qemag-validation)
 - 💼 Open to AI/ML Engineering & Applied Research roles — [aravindbalaji.com](https://aravindbalaji.com)
