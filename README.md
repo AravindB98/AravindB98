@@ -34,22 +34,30 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 ## 🚀 Projects
 
 <!--PROJECTS:START-->
-### 🤖 AI & Agentic Systems
+### 🤖 LLMs, RAG & Agents
 
 | Project | Description | Tech |
 |---|---|---|
 | **[agrocortex](https://github.com/AravindB98/agrocortex)** | The open-source AI cortex for agriculture: LLM benchmark, plant-disease vision, satellite field analytics, and a citation-grounded AI agronomist. | Python |
 | **[Cerebro](https://github.com/AravindB98/Cerebro)** | CEREBRO — AI Research Assistant | Python |
-| **[ch09-grounding-agents-in-evidence](https://github.com/AravindB98/ch09-grounding-agents-in-evidence)** | — | HTML |
+| **[ch09-grounding-agents-in-evidence](https://github.com/AravindB98/ch09-grounding-agents-in-evidence)** | Production case study of Magid's Collaborator newsroom RAG platform — why retrieval grounding is an epistemological constraint for agentic AI, with figures and notebook. | HTML |
 | **[civisynth](https://github.com/AravindB98/civisynth)** | Open political intelligence platform: narrative tracking, RAG fact-checking with evals, legislative intelligence, and election forecasting. | Python |
 | **[CodeSentinel](https://github.com/AravindB98/CodeSentinel)** | A Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
 | **[Foglight](https://github.com/AravindB98/Foglight)** | All-seeing internet intelligence layer for agents and humans — pluggable channels, persistent memory, temporal knowledge graph, monitoring and cited synthesis. | Python |
 | **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
 | **[omnicanon](https://github.com/AravindB98/omnicanon)** | Citation-verified AI infrastructure for sacred texts - multi-faith corpus, zero-hallucination RAG, TheoBench LLM benchmark, and canon-aware OCR. | Python |
+| **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
 | **[verimathix](https://github.com/AravindB98/verimathix)** | Verified-math toolkit: step-level solution verification, error localization, Lean 4 autoformalization, numeric kernels, and a step-grading benchmark. | Python |
 | **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
 
-### 👁️ Computer Vision & Robotics
+### 🦾 Physical AI & Robotics
+
+| Project | Description | Tech |
+|---|---|---|
+| **[everycam](https://github.com/AravindB98/everycam)** | Every camera is a robot teacher: privacy-first, robot-ready embodied data from everyday cameras. | Python |
+| **[Smart-Trolley](https://github.com/AravindB98/Smart-Trolley)** | Edge-AI smart shopping trolley on Raspberry Pi — CNN-based produce recognition (VGG16 → MobileNetV3, TensorFlow Lite INT8), load-cell weighing, and real-time Firebase billing & inventory. | Python |
+
+### 👁️ Computer Vision
 
 | Project | Description | Tech |
 |---|---|---|
@@ -65,9 +73,63 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 | **[carbonoscope](https://github.com/AravindB98/carbonoscope)** | Open climate intelligence platform: auditable GHG accounting, Climate TRACE analytics, grid carbon forecasting, disclosure parsing, climate risk. | Python |
 | **[physweave](https://github.com/AravindB98/physweave)** | Weaving physics simulation and machine learning into one modular toolkit: differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuits, and molecular dynamics. | Python |
 | **[Projects](https://github.com/AravindB98/Projects)** | Academic Projects | Python |
-| **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | — | Python |
+| **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
 
-### 🔬 Science & Simulation
+### 🌡️ Climate AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[carbonoscope](https://github.com/AravindB98/carbonoscope)** | Open climate intelligence platform: auditable GHG accounting, Climate TRACE analytics, grid carbon forecasting, disclosure parsing, climate risk. | Python |
+
+### 🌾 Agriculture AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[agrocortex](https://github.com/AravindB98/agrocortex)** | The open-source AI cortex for agriculture: LLM benchmark, plant-disease vision, satellite field analytics, and a citation-grounded AI agronomist. | Python |
+
+### 🏥 Healthcare AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[ClearAuth](https://github.com/AravindB98/ClearAuth)** | Open-source CMS-0057-F prior authorization platform — FHIR-native PAS intake, auditable adjudication, SLA enforcement, CMS PA metrics | Java |
+| **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
+
+### 💳 Fintech AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[ClearAuth](https://github.com/AravindB98/ClearAuth)** | Open-source CMS-0057-F prior authorization platform — FHIR-native PAS intake, auditable adjudication, SLA enforcement, CMS PA metrics | Java |
+| **[quantumteller](https://github.com/AravindB98/quantumteller)** | The open-source ATM stack — from COBOL core to quantum-safe crypto. ISO 8583 switch (Go) + COBOL core banking + roadmap to ML fraud scoring and post-quantum crypto. | Go |
+
+### 🏛️ Civic & Policy AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[civisynth](https://github.com/AravindB98/civisynth)** | Open political intelligence platform: narrative tracking, RAG fact-checking with evals, legislative intelligence, and election forecasting. | Python |
+
+### 🛰️ Space Tech
+
+| Project | Description | Tech |
+|---|---|---|
+| **[orbistra](https://github.com/AravindB98/orbistra)** | Open-source space operations platform: parallel SGP4 propagation, full-catalog conjunction screening, collision risk, 3-D ops console | Rust |
+
+### 🕵️ Security & Intelligence AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[CodeSentinel](https://github.com/AravindB98/CodeSentinel)** | A Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
+| **[Foglight](https://github.com/AravindB98/Foglight)** | All-seeing internet intelligence layer for agents and humans — pluggable channels, persistent memory, temporal knowledge graph, monitoring and cited synthesis. | Python |
+| **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
+| **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
+
+### ⚛️ Quantum Computing
+
+| Project | Description | Tech |
+|---|---|---|
+| **[qemag-validation](https://github.com/AravindB98/qemag-validation)** | Qiskit simulation code reproducing all numerical results of the QEMA-G paper — quantum message-passing on graphs under noiseless and IBM-Brisbane noise models. | Python |
+| **[quantumteller](https://github.com/AravindB98/quantumteller)** | The open-source ATM stack — from COBOL core to quantum-safe crypto. ISO 8583 switch (Go) + COBOL core banking + roadmap to ML fraud scoring and post-quantum crypto. | Go |
+
+### 🔬 Scientific AI & Simulation
 
 | Project | Description | Tech |
 |---|---|---|
@@ -76,34 +138,34 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 | **[physweave](https://github.com/AravindB98/physweave)** | Weaving physics simulation and machine learning into one modular toolkit: differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuits, and molecular dynamics. | Python |
 | **[verimathix](https://github.com/AravindB98/verimathix)** | Verified-math toolkit: step-level solution verification, error localization, Lean 4 autoformalization, numeric kernels, and a step-grading benchmark. | Python |
 
-### ⚛️ Quantum
+### 📖 Knowledge & Education AI
 
 | Project | Description | Tech |
 |---|---|---|
-| **[qemag-validation](https://github.com/AravindB98/qemag-validation)** | — | Python |
-| **[quantumteller](https://github.com/AravindB98/quantumteller)** | The open-source ATM stack — from COBOL core to quantum-safe crypto. ISO 8583 switch (Go) + COBOL core banking + roadmap to ML fraud scoring and post-quantum crypto. | Go |
+| **[ch09-grounding-agents-in-evidence](https://github.com/AravindB98/ch09-grounding-agents-in-evidence)** | Production case study of Magid's Collaborator newsroom RAG platform — why retrieval grounding is an epistemological constraint for agentic AI, with figures and notebook. | HTML |
+| **[ideas-you-can-picture](https://github.com/AravindB98/ideas-you-can-picture)** | Official website for the Ideas You Can Picture book series by Aravind Balaji | HTML |
+| **[omnicanon](https://github.com/AravindB98/omnicanon)** | Citation-verified AI infrastructure for sacred texts - multi-faith corpus, zero-hallucination RAG, TheoBench LLM benchmark, and canon-aware OCR. | Python |
 
-### 🌍 Domain Platforms (Health · Climate · Fintech · Civic · Space)
+### ☁️ Cloud, Data & Backend Engineering
 
 | Project | Description | Tech |
 |---|---|---|
-| **[agrocortex](https://github.com/AravindB98/agrocortex)** | The open-source AI cortex for agriculture: LLM benchmark, plant-disease vision, satellite field analytics, and a citation-grounded AI agronomist. | Python |
-| **[carbonoscope](https://github.com/AravindB98/carbonoscope)** | Open climate intelligence platform: auditable GHG accounting, Climate TRACE analytics, grid carbon forecasting, disclosure parsing, climate risk. | Python |
-| **[civisynth](https://github.com/AravindB98/civisynth)** | Open political intelligence platform: narrative tracking, RAG fact-checking with evals, legislative intelligence, and election forecasting. | Python |
-| **[ClearAuth](https://github.com/AravindB98/ClearAuth)** | Open-source CMS-0057-F prior authorization platform — FHIR-native PAS intake, auditable adjudication, SLA enforcement, CMS PA metrics | Java |
-| **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
-| **[orbistra](https://github.com/AravindB98/orbistra)** | Open-source space operations platform: parallel SGP4 propagation, full-catalog conjunction screening, collision risk, 3-D ops console | Rust |
 | **[quantumteller](https://github.com/AravindB98/quantumteller)** | The open-source ATM stack — from COBOL core to quantum-safe crypto. ISO 8583 switch (Go) + COBOL core banking + roadmap to ML fraud scoring and post-quantum crypto. | Go |
-| **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
+| **[robust-data-processor](https://github.com/AravindB98/robust-data-processor)** | Fault-tolerant multi-tenant data ingestion pipeline on GCP — Cloud Run API, Pub/Sub buffering, worker retries with dead-lettering, and load testing. | Python |
+| **[servique-v2](https://github.com/AravindB98/servique-v2)** | ServiQue v2 — production-ready rewrite of the ServiQue service booking platform (v1: Java Swing/DB4O). Node+TypeScript+Express+Prisma API, React SPA, JWT auth with RBAC, tests, Docker, CI. | TypeScript |
 
-### 🛠️ Tools & Other
+### 🎮 Games & Creative
+
+| Project | Description | Tech |
+|---|---|---|
+| **[cheese-chase-arcade](https://github.com/AravindB98/cheese-chase-arcade)** | 🧀 Ten arcade games + a 10-chapter story mode in a single HTML file. Open-source, zero dependencies. | HTML |
+
+### 🌐 Websites & Portfolio
 
 | Project | Description | Tech |
 |---|---|---|
 | **[aravindb98.github.io](https://github.com/AravindB98/aravindb98.github.io)** | Profile page — live categorized projects | HTML |
-| **[cheese-chase-arcade](https://github.com/AravindB98/cheese-chase-arcade)** | 🧀 Ten arcade games + a 10-chapter story mode in a single HTML file. Open-source, zero dependencies. | HTML |
 | **[ideas-you-can-picture](https://github.com/AravindB98/ideas-you-can-picture)** | Official website for the Ideas You Can Picture book series by Aravind Balaji | HTML |
-| **[robust-data-processor](https://github.com/AravindB98/robust-data-processor)** | — | Python |
 | **[servique-v2](https://github.com/AravindB98/servique-v2)** | ServiQue v2 — production-ready rewrite of the ServiQue service booking platform (v1: Java Swing/DB4O). Node+TypeScript+Express+Prisma API, React SPA, JWT auth with RBAC, tests, Docker, CI. | TypeScript |
 <!--PROJECTS:END-->
 
