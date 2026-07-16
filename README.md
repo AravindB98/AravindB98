@@ -42,10 +42,14 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 | **[Cerebro](https://github.com/AravindB98/Cerebro)** | CEREBRO — AI Research Assistant | Python |
 | **[ch09-grounding-agents-in-evidence](https://github.com/AravindB98/ch09-grounding-agents-in-evidence)** | Production case study of Magid's Collaborator newsroom RAG platform — why retrieval grounding is an epistemological constraint for agentic AI, with figures and notebook. | HTML |
 | **[civisynth](https://github.com/AravindB98/civisynth)** | Open political intelligence platform: narrative tracking, RAG fact-checking with evals, legislative intelligence, and election forecasting. | Python |
-| **[CodeSentinel](https://github.com/AravindB98/CodeSentinel)** | A Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
+| **[CodeSentinel-v1](https://github.com/AravindB98/CodeSentinel-v1)** | CodeSentinel v1 — Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection (original version, split from Projects monorepo) | — |
+| **[CodeSentinel-v2](https://github.com/AravindB98/CodeSentinel-v2)** | CodeSentinel v2 — Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
 | **[Foglight](https://github.com/AravindB98/Foglight)** | All-seeing internet intelligence layer for agents and humans — pluggable channels, persistent memory, temporal knowledge graph, monitoring and cited synthesis. | Python |
+| **[LLM-Agents-Deep-Q-Learning-Atari](https://github.com/AravindB98/LLM-Agents-Deep-Q-Learning-Atari)** | LLM Agents & Deep Q-Learning with Atari Games | Jupyter Notebook |
 | **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
+| **[MediGraphAI](https://github.com/AravindB98/MediGraphAI)** | LLM-Enabled Healthcare Knowledge Graph Platform | Python |
 | **[omnicanon](https://github.com/AravindB98/omnicanon)** | Citation-verified AI infrastructure for sacred texts - multi-faith corpus, zero-hallucination RAG, TheoBench LLM benchmark, and canon-aware OCR. | Python |
+| **[QueryCraft](https://github.com/AravindB98/QueryCraft)** | Fine-tuning an LLM - QueryCraft | Jupyter Notebook |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
 | **[verimathix](https://github.com/AravindB98/verimathix)** | Verified-math toolkit: step-level solution verification, error localization, Lean 4 autoformalization, numeric kernels, and a step-grading benchmark. | Python |
 | **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
@@ -71,8 +75,10 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 |---|---|---|
 | **[alchemind](https://github.com/AravindB98/alchemind)** | Invent, predict, and validate novel chemical compounds — an end-to-end de novo molecular discovery platform (RDKit + genetic generation + ML property prediction + FastAPI). | Python |
 | **[carbonoscope](https://github.com/AravindB98/carbonoscope)** | Open climate intelligence platform: auditable GHG accounting, Climate TRACE analytics, grid carbon forecasting, disclosure parsing, climate risk. | Python |
+| **[LLM-Agents-Deep-Q-Learning-Atari](https://github.com/AravindB98/LLM-Agents-Deep-Q-Learning-Atari)** | LLM Agents & Deep Q-Learning with Atari Games | Jupyter Notebook |
 | **[physweave](https://github.com/AravindB98/physweave)** | Weaving physics simulation and machine learning into one modular toolkit: differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuits, and molecular dynamics. | Python |
 | **[Projects](https://github.com/AravindB98/Projects)** | Academic Projects | Python |
+| **[QueryCraft](https://github.com/AravindB98/QueryCraft)** | Fine-tuning an LLM - QueryCraft | Jupyter Notebook |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
 
 ### 🌡️ Climate AI
@@ -91,8 +97,10 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 
 | Project | Description | Tech |
 |---|---|---|
+| **[CareHub](https://github.com/AravindB98/CareHub)** | Hospital Management System | HTML |
 | **[ClearAuth](https://github.com/AravindB98/ClearAuth)** | Open-source CMS-0057-F prior authorization platform — FHIR-native PAS intake, auditable adjudication, SLA enforcement, CMS PA metrics | Java |
 | **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
+| **[MediGraphAI](https://github.com/AravindB98/MediGraphAI)** | LLM-Enabled Healthcare Knowledge Graph Platform | Python |
 
 ### 💳 Fintech AI
 
@@ -117,7 +125,8 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 
 | Project | Description | Tech |
 |---|---|---|
-| **[CodeSentinel](https://github.com/AravindB98/CodeSentinel)** | A Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
+| **[CodeSentinel-v1](https://github.com/AravindB98/CodeSentinel-v1)** | CodeSentinel v1 — Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection (original version, split from Projects monorepo) | — |
+| **[CodeSentinel-v2](https://github.com/AravindB98/CodeSentinel-v2)** | CodeSentinel v2 — Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
 | **[Foglight](https://github.com/AravindB98/Foglight)** | All-seeing internet intelligence layer for agents and humans — pluggable channels, persistent memory, temporal knowledge graph, monitoring and cited synthesis. | Python |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
 | **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
@@ -152,6 +161,7 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 |---|---|---|
 | **[quantumteller](https://github.com/AravindB98/quantumteller)** | The open-source ATM stack — from COBOL core to quantum-safe crypto. ISO 8583 switch (Go) + COBOL core banking + roadmap to ML fraud scoring and post-quantum crypto. | Go |
 | **[robust-data-processor](https://github.com/AravindB98/robust-data-processor)** | Fault-tolerant multi-tenant data ingestion pipeline on GCP — Cloud Run API, Pub/Sub buffering, worker retries with dead-lettering, and load testing. | Python |
+| **[ServiQue](https://github.com/AravindB98/ServiQue)** | ServiQue v1 — service booking platform (Java Swing + DB4O); rewritten as servique-v2 | — |
 | **[servique-v2](https://github.com/AravindB98/servique-v2)** | ServiQue v2 — production-ready rewrite of the ServiQue service booking platform (v1: Java Swing/DB4O). Node+TypeScript+Express+Prisma API, React SPA, JWT auth with RBAC, tests, Docker, CI. | TypeScript |
 
 ### 🎮 Games & Creative
@@ -166,6 +176,7 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 |---|---|---|
 | **[aravindb98.github.io](https://github.com/AravindB98/aravindb98.github.io)** | Profile page — live categorized projects | HTML |
 | **[ideas-you-can-picture](https://github.com/AravindB98/ideas-you-can-picture)** | Official website for the Ideas You Can Picture book series by Aravind Balaji | HTML |
+| **[ServiQue](https://github.com/AravindB98/ServiQue)** | ServiQue v1 — service booking platform (Java Swing + DB4O); rewritten as servique-v2 | — |
 | **[servique-v2](https://github.com/AravindB98/servique-v2)** | ServiQue v2 — production-ready rewrite of the ServiQue service booking platform (v1: Java Swing/DB4O). Node+TypeScript+Express+Prisma API, React SPA, JWT auth with RBAC, tests, Docker, CI. | TypeScript |
 <!--PROJECTS:END-->
 
