@@ -19,75 +19,106 @@ import urllib.request
 USER = "AravindB98"
 README = sys.argv[1] if len(sys.argv) > 1 else "README.md"
 
-AI = "🤖 AI & Agentic Systems"
-CV = "👁️ Computer Vision & Robotics"
+AGENTS = "🤖 LLMs, RAG & Agents"
+PHYSICAL = "🦾 Physical AI & Robotics"
+CV = "👁️ Computer Vision"
 ML = "🧠 Machine Learning & RL"
-SCI = "🔬 Science & Simulation"
-QUANTUM = "⚛️ Quantum"
-DOMAIN = "🌍 Domain Platforms (Health · Climate · Fintech · Civic · Space)"
+CLIMATE = "🌡️ Climate AI"
+AGRI = "🌾 Agriculture AI"
+HEALTH = "🏥 Healthcare AI"
+FINTECH = "💳 Fintech AI"
+CIVIC = "🏛️ Civic & Policy AI"
+SPACE = "🛰️ Space Tech"
+SECURITY = "🕵️ Security & Intelligence AI"
+QUANTUM = "⚛️ Quantum Computing"
+SCI = "🔬 Scientific AI & Simulation"
+KNOWLEDGE = "📖 Knowledge & Education AI"
+CLOUD = "☁️ Cloud, Data & Backend Engineering"
+GAMES = "🎮 Games & Creative"
+WEB = "🌐 Websites & Portfolio"
 TOOLS = "🛠️ Tools & Other"
 
-CATEGORY_ORDER = [AI, CV, ML, SCI, QUANTUM, DOMAIN, TOOLS]
+CATEGORY_ORDER = [AGENTS, PHYSICAL, CV, ML, CLIMATE, AGRI, HEALTH, FINTECH,
+                  CIVIC, SPACE, SECURITY, QUANTUM, SCI, KNOWLEDGE, CLOUD,
+                  GAMES, WEB, TOOLS]
 
 # Keyword rules — a repo picks up EVERY category whose keywords match.
 KEYWORDS = {
-    AI: ["agent", "multi-agent", "crewai", "langgraph", "llm", "rag",
-         "knowledge-graph", "knowledge graph", "code review", "copilot",
-         "research assistant", "fact-check", "citation", "hallucination",
-         "benchmark", "ai "],
+    AGENTS: ["agent", "multi-agent", "crewai", "langgraph", "llm", "rag",
+             "knowledge-graph", "knowledge graph", "copilot", "gpt",
+             "research assistant", "fact-check", "citation", "hallucination",
+             "prompt", "retrieval"],
+    PHYSICAL: ["robot", "embodied", "raspberry pi", "edge-ai", "edge ai",
+               "iot", "sensor", "drone"],
     CV: ["vision", "cnn", "pose", "densepose", "camera", "recognition",
-         "image", "opencv", "yolo", "detection", "robot", "embodied"],
+         "image", "opencv", "yolo", "detection", "segmentation"],
     ML: ["reinforcement", "fine-tun", "qlora", "machine-learning",
          "machine learning", "deep-learning", "pytorch", "neural",
-         "forecasting", "generative", "surrogate"],
+         "forecasting", "generative", "surrogate", "benchmark"],
+    CLIMATE: ["climate", "ghg", "carbon", "emission", "grid carbon"],
+    AGRI: ["agriculture", "agro", "crop", "plant-disease", "farm"],
+    HEALTH: ["health", "clinical", "fhir", "hl7", "medical", "prior auth",
+             "patient", "hospital"],
+    FINTECH: ["banking", "atm", "iso 8583", "fintech", "payment", "fraud",
+              "trading", "cobol"],
+    CIVIC: ["political", "legislative", "election", "civic", "policy",
+            "government"],
+    SPACE: ["space", "orbit", "satellite", "sgp4", "conjunction",
+            "spacecraft"],
+    SECURITY: ["vulnerability", "security", "osint", "intelligence fusion",
+               "threat", "ads-b", "surveillance", "quantum-safe"],
+    QUANTUM: ["quantum", "qema", "pennylane", "qiskit"],
     SCI: ["physics", "simulation", "differentiable", "molecular", "chemical",
-          "chemistry", "rdkit", "lean 4", "math", "pde", "orbit", "sgp4",
-          "propagation", "conjunction", "satellite"],
-    QUANTUM: ["quantum", "qema", "pennylane"],
-    DOMAIN: ["fhir", "clinical", "healthcare", "prior authorization",
-             "banking", "atm", "iso 8583", "fintech", "climate", "ghg",
-             "carbon", "political", "legislative", "election", "agriculture",
-             "osint", "intelligence platform", "ads-b", "ais", "space operations"],
+          "chemistry", "rdkit", "lean 4", "math", "pde", "propagation",
+          "scientific"],
+    KNOWLEDGE: ["book", "education", "corpus", "sacred", "learning platform",
+                "course", "chapter"],
+    CLOUD: ["gcp", "aws", "azure", "cloud run", "pipeline", "ingestion",
+            "kubernetes", "docker", "backend", "api platform", "pub/sub"],
+    GAMES: ["game", "arcade", "puzzle"],
+    WEB: ["website", "portfolio", "profile page", "landing"],
 }
 
 TOPIC_MAP = {
-    "computer-vision": CV, "robotics": CV,
+    "computer-vision": CV, "robotics": PHYSICAL,
     "quantum": QUANTUM, "quantum-computing": QUANTUM,
     "reinforcement-learning": ML, "machine-learning": ML, "deep-learning": ML,
-    "ai": AI, "agents": AI, "llm": AI, "rag": AI,
-    "simulation": SCI, "physics": SCI, "chemistry": SCI, "space": SCI,
-    "healthcare": DOMAIN, "fintech": DOMAIN, "climate": DOMAIN,
+    "ai": AGENTS, "agents": AGENTS, "llm": AGENTS, "rag": AGENTS,
+    "simulation": SCI, "physics": SCI, "chemistry": SCI,
+    "space": SPACE, "healthcare": HEALTH, "fintech": FINTECH,
+    "climate": CLIMATE, "agriculture": AGRI, "security": SECURITY,
+    "game": GAMES, "website": WEB, "cloud": CLOUD,
 }
 
 # Manual overrides where keywords would guess wrong: repo -> list of categories
 OVERRIDES = {
-    "civisynth": [AI, DOMAIN],
-    "omnicanon": [AI],
-    "verimathix": [AI, SCI],
-    "physweave": [ML, SCI],
-    "carbonoscope": [ML, DOMAIN],
-    "quantumteller": [QUANTUM, DOMAIN],
-    "orbistra": [SCI, DOMAIN],
-    "ClearAuth": [DOMAIN],
-    "alchemind": [ML, SCI],
-    "agrocortex": [AI, CV, DOMAIN],
-    "WardSight": [AI, DOMAIN],
-    "Foglight": [AI],
-    "everycam": [CV],
-    "Smart-Trolley": [CV],
-    "RuView": [CV],
-    "RL_Codesentinel": [ML],
+    "Cerebro": [AGENTS],
+    "CodeSentinel": [AGENTS, SECURITY],
+    "RL_Codesentinel": [AGENTS, ML, SECURITY],
+    "ch09-grounding-agents-in-evidence": [AGENTS, KNOWLEDGE],
+    "medigraph-ai": [AGENTS, HEALTH],
+    "civisynth": [AGENTS, CIVIC],
+    "omnicanon": [AGENTS, KNOWLEDGE],
+    "Foglight": [AGENTS, SECURITY],
+    "WardSight": [AGENTS, SECURITY],
+    "agrocortex": [AGENTS, CV, AGRI],
+    "verimathix": [AGENTS, SCI],
+    "everycam": [PHYSICAL, CV],
+    "RuView": [PHYSICAL, CV],
+    "Smart-Trolley": [PHYSICAL, CV],
     "Projects": [ML],
+    "physweave": [ML, SCI],
+    "alchemind": [ML, SCI],
+    "carbonoscope": [ML, CLIMATE],
+    "ClearAuth": [HEALTH, FINTECH],
+    "quantumteller": [FINTECH, QUANTUM, CLOUD],
+    "orbistra": [SPACE, SCI],
     "qemag-validation": [QUANTUM],
-    "CodeSentinel": [AI],
-    "Cerebro": [AI],
-    "medigraph-ai": [AI, DOMAIN],
-    "ch09-grounding-agents-in-evidence": [AI],
-    "cheese-chase-arcade": [TOOLS],
-    "servique-v2": [TOOLS],
-    "robust-data-processor": [TOOLS],
-    "ideas-you-can-picture": [TOOLS],
-    "aravindb98.github.io": [TOOLS],
+    "robust-data-processor": [CLOUD],
+    "servique-v2": [CLOUD, WEB],
+    "cheese-chase-arcade": [GAMES],
+    "ideas-you-can-picture": [WEB, KNOWLEDGE],
+    "aravindb98.github.io": [WEB],
 }
 
 SKIP = {USER, "websiteab"}  # profile repo itself + site repo
