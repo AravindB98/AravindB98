@@ -21,13 +21,13 @@ VP of R&D @ AI Skunkworks, Northeastern University · Boston, MA
 
 ## 🧑‍💻 About Me
 
-Most engineers ship code — I ship *research that ships back*. I'm the **author of [QEMA-G](https://zenodo.org/records/18664794)**, a quantum-enhanced memory framework for graph AI published on **Zenodo and TechRxiv**, and **VP of R&D at AI Skunkworks**, the graduate research org at Northeastern University. Four years of production engineering before grad school; now building where multi-agent systems, RAG, and reinforcement learning converge.
+I build AI systems that survive contact with reality — then publish the research to prove it. **Author of [QEMA-G](https://zenodo.org/records/18664794)**, a quantum-enhanced memory framework for graph AI (Zenodo · TechRxiv), and **VP of R&D at AI Skunkworks**, Northeastern's graduate AI research org. Four years of production engineering before grad school; now 30+ open-source projects deep into the space where multi-agent systems, RAG, and reinforcement learning converge.
 
-- 🎓 MS in Information Systems @ Northeastern University (GPA 3.90/4.0)
-- 🏆 **1st Place, MGEN (now SEIS) Hackathon 2025** — [MSL Practice Gym](https://github.com/AravindB98/MGEN-Hackathon-2025): AI practice platform for Medical Science Liaisons, built in 48 hours for the DNATE challenge
-- 📖 Author of the *Ideas You Can Picture* book series — [find it on Amazon](https://www.amazon.com/dp/B0H6WPWMG4)
-- ⚛️ QEMA-G: [Zenodo](https://zenodo.org/records/18664794) · [TechRxiv](https://www.techrxiv.org/) · [Plain-English explainer](https://open.substack.com/pub/northeasternise/p/the-hub-tax-how-a-hidden-graph-ai) · [Validation code](https://github.com/AravindB98/qemag-validation)
-- 💼 Open to AI/ML Engineering & Applied Research roles — [aravindbalaji.com](https://aravindbalaji.com)
+- 🎓 **MS in Information Systems** @ Northeastern University — GPA 3.90/4.0
+- 🏆 **1st Place, MGEN (now SEIS) Hackathon 2025** — [MSL Practice Gym](https://github.com/AravindB98/MGEN-Hackathon-2025), an AI practice platform for Medical Science Liaisons built in 48 hours for the DNATE challenge
+- ⚛️ **QEMA-G**: [Zenodo](https://zenodo.org/records/18664794) · [TechRxiv](https://www.techrxiv.org/) · [plain-English explainer](https://open.substack.com/pub/northeasternise/p/the-hub-tax-how-a-hidden-graph-ai) · [validation code](https://github.com/AravindB98/qemag-validation)
+- 📖 Author of the *Ideas You Can Picture* book series — [on Amazon](https://www.amazon.com/dp/B0H6WPWMG4)
+- 💼 **Open to AI/ML Engineering & Applied Research roles** — [aravindbalaji.com](https://aravindbalaji.com)
 
 ---
 
@@ -74,6 +74,7 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 | Project | Description | Tech |
 |---|---|---|
 | **[alchemind](https://github.com/AravindB98/alchemind)** | Invent, predict, and validate novel chemical compounds — an end-to-end de novo molecular discovery platform (RDKit + genetic generation + ML property prediction + FastAPI). | Python |
+| **[biopolyglot](https://github.com/AravindB98/biopolyglot)** | BioPolyglot: one model, many biological languages — a modular multi-modal ML platform unifying protein variant-effect, molecular property, genomic, and single-cell prediction behind one interface. | Python |
 | **[carbonoscope](https://github.com/AravindB98/carbonoscope)** | Open climate intelligence platform: auditable GHG accounting, Climate TRACE analytics, grid carbon forecasting, disclosure parsing, climate risk. | Python |
 | **[LLM-Agents-Deep-Q-Learning-Atari](https://github.com/AravindB98/LLM-Agents-Deep-Q-Learning-Atari)** | LLM Agents & Deep Q-Learning with Atari Games | Jupyter Notebook |
 | **[physweave](https://github.com/AravindB98/physweave)** | Weaving physics simulation and machine learning into one modular toolkit: differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuits, and molecular dynamics. | Python |
@@ -97,10 +98,12 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 
 | Project | Description | Tech |
 |---|---|---|
+| **[biopolyglot](https://github.com/AravindB98/biopolyglot)** | BioPolyglot: one model, many biological languages — a modular multi-modal ML platform unifying protein variant-effect, molecular property, genomic, and single-cell prediction behind one interface. | Python |
 | **[CareHub](https://github.com/AravindB98/CareHub)** | Hospital Management System | HTML |
 | **[ClearAuth](https://github.com/AravindB98/ClearAuth)** | Open-source CMS-0057-F prior authorization platform — FHIR-native PAS intake, auditable adjudication, SLA enforcement, CMS PA metrics | Java |
 | **[medigraph-ai](https://github.com/AravindB98/medigraph-ai)** | MediGraph AI — offline-first clinical knowledge-graph & decision-support platform with FHIR/HL7/C-CDA connectors for US + India | Python |
 | **[MediGraphAI](https://github.com/AravindB98/MediGraphAI)** | LLM-Enabled Healthcare Knowledge Graph Platform | Python |
+| **[MGEN-Hackathon-2025](https://github.com/AravindB98/MGEN-Hackathon-2025)** | 🏆 1st Place — MSL Practice Gym, MGEN (now SEIS) Hackathon 2025, Northeastern University. AI practice platform for Medical Science Liaisons. | — |
 
 ### 💳 Fintech AI
 
@@ -143,6 +146,7 @@ Most engineers ship code — I ship *research that ships back*. I'm the **author
 | Project | Description | Tech |
 |---|---|---|
 | **[alchemind](https://github.com/AravindB98/alchemind)** | Invent, predict, and validate novel chemical compounds — an end-to-end de novo molecular discovery platform (RDKit + genetic generation + ML property prediction + FastAPI). | Python |
+| **[biopolyglot](https://github.com/AravindB98/biopolyglot)** | BioPolyglot: one model, many biological languages — a modular multi-modal ML platform unifying protein variant-effect, molecular property, genomic, and single-cell prediction behind one interface. | Python |
 | **[orbistra](https://github.com/AravindB98/orbistra)** | Open-source space operations platform: parallel SGP4 propagation, full-catalog conjunction screening, collision risk, 3-D ops console | Rust |
 | **[physweave](https://github.com/AravindB98/physweave)** | Weaving physics simulation and machine learning into one modular toolkit: differentiable simulation, neural PDE surrogates, stochastic finance, quantum circuits, and molecular dynamics. | Python |
 | **[verimathix](https://github.com/AravindB98/verimathix)** | Verified-math toolkit: step-level solution verification, error localization, Lean 4 autoformalization, numeric kernels, and a step-grading benchmark. | Python |

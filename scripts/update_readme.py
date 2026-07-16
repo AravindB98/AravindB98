@@ -116,6 +116,7 @@ OVERRIDES = {
     "physweave": [ML, SCI],
     "alchemind": [ML, SCI],
     "carbonoscope": [ML, CLIMATE],
+    "biopolyglot": [ML, SCI, HEALTH],
     "ClearAuth": [HEALTH, FINTECH],
     "quantumteller": [FINTECH, QUANTUM, CLOUD],
     "orbistra": [SPACE, SCI],
