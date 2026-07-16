@@ -93,7 +93,13 @@ TOPIC_MAP = {
 # Manual overrides where keywords would guess wrong: repo -> list of categories
 OVERRIDES = {
     "Cerebro": [AGENTS],
-    "CodeSentinel": [AGENTS, SECURITY],
+    "CodeSentinel-v1": [AGENTS, SECURITY],
+    "CodeSentinel-v2": [AGENTS, SECURITY],
+    "QueryCraft": [AGENTS, ML],
+    "LLM-Agents-Deep-Q-Learning-Atari": [AGENTS, ML],
+    "MediGraphAI": [AGENTS, HEALTH],
+    "CareHub": [HEALTH],
+    "ServiQue": [CLOUD, WEB],
     "RL_Codesentinel": [AGENTS, ML, SECURITY],
     "ch09-grounding-agents-in-evidence": [AGENTS, KNOWLEDGE],
     "medigraph-ai": [AGENTS, HEALTH],
