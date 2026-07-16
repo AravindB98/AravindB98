@@ -157,7 +157,7 @@ def categorize(repo):
 
 def main():
     repos = fetch(f"https://api.github.com/users/{USER}/repos?per_page=100&sort=updated")
-    repos = [r for r in repos if not r["fork"] and not r["private"] and r["name"] not in SKIP]
+    repos = [r for r in repos if (not r["fork"] or r["name"] in OVERRIDES) and not r["private"] and r["name"] not in SKIP]
 
     buckets = {cat: [] for cat in CATEGORY_ORDER}
     for r in repos:

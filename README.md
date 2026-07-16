@@ -59,6 +59,7 @@ I build AI systems that survive contact with reality — then publish the resear
 | Project | Description | Tech |
 |---|---|---|
 | **[everycam](https://github.com/AravindB98/everycam)** | Every camera is a robot teacher: privacy-first, robot-ready embodied data from everyday cameras. | Python |
+| **[RuView](https://github.com/AravindB98/RuView)** | π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.  | — |
 | **[Smart-Trolley](https://github.com/AravindB98/Smart-Trolley)** | Edge-AI smart shopping trolley on Raspberry Pi — CNN-based produce recognition (VGG16 → MobileNetV3, TensorFlow Lite INT8), load-cell weighing, and real-time Firebase billing & inventory. | Python |
 
 ### 👁️ Computer Vision
@@ -67,6 +68,7 @@ I build AI systems that survive contact with reality — then publish the resear
 |---|---|---|
 | **[agrocortex](https://github.com/AravindB98/agrocortex)** | The open-source AI cortex for agriculture: LLM benchmark, plant-disease vision, satellite field analytics, and a citation-grounded AI agronomist. | Python |
 | **[everycam](https://github.com/AravindB98/everycam)** | Every camera is a robot teacher: privacy-first, robot-ready embodied data from everyday cameras. | Python |
+| **[RuView](https://github.com/AravindB98/RuView)** | π RuView: WiFi DensePose turns commodity WiFi signals into real-time human pose estimation, vital sign monitoring, and presence detection — all without a single pixel of video.  | — |
 | **[Smart-Trolley](https://github.com/AravindB98/Smart-Trolley)** | Edge-AI smart shopping trolley on Raspberry Pi — CNN-based produce recognition (VGG16 → MobileNetV3, TensorFlow Lite INT8), load-cell weighing, and real-time Firebase billing & inventory. | Python |
 
 ### 🧠 Machine Learning & RL
