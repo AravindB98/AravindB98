@@ -33,8 +33,6 @@ I build AI systems that survive contact with reality — then publish the resear
 
 ## 🚀 Projects
 
-> **🆕 Latest — [VoltIQ ⚡](https://github.com/AravindB98/voltiq)**: EV Battery Intelligence Platform. Raw CAN bus frames → DBC decoding → ML anomaly detection (safety rules + Isolation Forest), State-of-Health estimation from ordinary driving data, and Remaining-Useful-Life prediction with uncertainty bounds — physics-based fleet simulator, FastAPI + live dashboard, 27 tests, CI, Docker. *Built for the problems EV OEMs, BMS suppliers, and fleet operators solve daily.*
-
 <!--PROJECTS:START-->
 ### 🤖 LLMs, RAG & Agents
 
@@ -85,6 +83,13 @@ I build AI systems that survive contact with reality — then publish the resear
 | **[Projects](https://github.com/AravindB98/Projects)** | Academic Projects | Python |
 | **[QueryCraft](https://github.com/AravindB98/QueryCraft)** | Fine-tuning an LLM - QueryCraft | Jupyter Notebook |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
+| **[voltiq](https://github.com/AravindB98/voltiq)** | ⚡ EV Battery Intelligence Platform — CAN telemetry ingestion, ML anomaly detection, SOH estimation & RUL prediction | Python |
+
+### 🔋 Electric Vehicle & AI
+
+| Project | Description | Tech |
+|---|---|---|
+| **[voltiq](https://github.com/AravindB98/voltiq)** | ⚡ EV Battery Intelligence Platform — CAN telemetry ingestion, ML anomaly detection, SOH estimation & RUL prediction | Python |
 
 ### 🌡️ Climate AI
 

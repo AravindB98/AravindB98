@@ -23,6 +23,7 @@ AGENTS = "🤖 LLMs, RAG & Agents"
 PHYSICAL = "🦾 Physical AI & Robotics"
 CV = "👁️ Computer Vision"
 ML = "🧠 Machine Learning & RL"
+EV = "🔋 Electric Vehicle & AI"
 CLIMATE = "🌡️ Climate AI"
 AGRI = "🌾 Agriculture AI"
 HEALTH = "🏥 Healthcare AI"
@@ -38,7 +39,7 @@ GAMES = "🎮 Games & Creative"
 WEB = "🌐 Websites & Portfolio"
 TOOLS = "🛠️ Tools & Other"
 
-CATEGORY_ORDER = [AGENTS, PHYSICAL, CV, ML, CLIMATE, AGRI, HEALTH, FINTECH,
+CATEGORY_ORDER = [AGENTS, PHYSICAL, CV, ML, EV, CLIMATE, AGRI, HEALTH, FINTECH,
                   CIVIC, SPACE, SECURITY, QUANTUM, SCI, KNOWLEDGE, CLOUD,
                   GAMES, WEB, TOOLS]
 
@@ -55,6 +56,10 @@ KEYWORDS = {
     ML: ["reinforcement", "fine-tun", "qlora", "machine-learning",
          "machine learning", "deep-learning", "pytorch", "neural",
          "forecasting", "generative", "surrogate", "benchmark"],
+    EV: ["electric vehicle", " ev ", "battery", "bms", "can bus",
+         "can-bus", "vehicle telemetry", "state-of-health", "soh",
+         "remaining-useful-life", "rul", "charging", "telematics",
+         "powertrain", "dbc"],
     CLIMATE: ["climate", "ghg", "carbon", "emission", "grid carbon"],
     AGRI: ["agriculture", "agro", "crop", "plant-disease", "farm"],
     HEALTH: ["health", "clinical", "fhir", "hl7", "medical", "prior auth",
@@ -86,12 +91,15 @@ TOPIC_MAP = {
     "ai": AGENTS, "agents": AGENTS, "llm": AGENTS, "rag": AGENTS,
     "simulation": SCI, "physics": SCI, "chemistry": SCI,
     "space": SPACE, "healthcare": HEALTH, "fintech": FINTECH,
+    "ev": EV, "battery-management-system": EV, "can-bus": EV,
+    "telemetry": EV, "predictive-maintenance": EV,
     "climate": CLIMATE, "agriculture": AGRI, "security": SECURITY,
     "game": GAMES, "website": WEB, "cloud": CLOUD,
 }
 
 # Manual overrides where keywords would guess wrong: repo -> list of categories
 OVERRIDES = {
+    "voltiq": [EV, ML],
     "Cerebro": [AGENTS],
     "CodeSentinel-v1": [AGENTS, SECURITY],
     "CodeSentinel-v2": [AGENTS, SECURITY],
