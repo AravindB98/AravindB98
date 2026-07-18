@@ -33,6 +33,8 @@ I build AI systems that survive contact with reality — then publish the resear
 
 ## 🚀 Projects
 
+> **🆕 Latest — [VoltIQ ⚡](https://github.com/AravindB98/voltiq)**: EV Battery Intelligence Platform. Raw CAN bus frames → DBC decoding → ML anomaly detection (safety rules + Isolation Forest), State-of-Health estimation from ordinary driving data, and Remaining-Useful-Life prediction with uncertainty bounds — physics-based fleet simulator, FastAPI + live dashboard, 27 tests, CI, Docker. *Built for the problems EV OEMs, BMS suppliers, and fleet operators solve daily.*
+
 <!--PROJECTS:START-->
 ### 🤖 LLMs, RAG & Agents
 
