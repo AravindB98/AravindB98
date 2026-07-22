@@ -99,6 +99,7 @@ TOPIC_MAP = {
 
 # Manual overrides where keywords would guess wrong: repo -> list of categories
 OVERRIDES = {
+    "verifact": [AGENTS, SECURITY, CIVIC],
     "voltiq": [EV, ML],
     "Cerebro": [AGENTS],
     "CodeSentinel-v1": [AGENTS, SECURITY],
