@@ -52,7 +52,7 @@ I build AI systems that survive contact with reality — then publish the resear
 | **[omnicanon](https://github.com/AravindB98/omnicanon)** | Citation-verified AI infrastructure for sacred texts - multi-faith corpus, zero-hallucination RAG, TheoBench LLM benchmark, and canon-aware OCR. | Python |
 | **[QueryCraft](https://github.com/AravindB98/QueryCraft)** | Fine-tuning an LLM - QueryCraft | Jupyter Notebook |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
-| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content& social media - provenance, claim verification, souce reputation & manipulation signals. | Python |
+| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content and social media - provenance, claim verification, source reputation and manipulation signals. | Python |
 | **[verimathix](https://github.com/AravindB98/verimathix)** | Verified-math toolkit: step-level solution verification, error localization, Lean 4 autoformalization, numeric kernels, and a step-grading benchmark. | Python |
 | **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
 
@@ -128,7 +128,7 @@ I build AI systems that survive contact with reality — then publish the resear
 | Project | Description | Tech |
 |---|---|---|
 | **[civisynth](https://github.com/AravindB98/civisynth)** | Open political intelligence platform: narrative tracking, RAG fact-checking with evals, legislative intelligence, and election forecasting. | Python |
-| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content& social media - provenance, claim verification, souce reputation & manipulation signals. | Python |
+| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content and social media - provenance, claim verification, source reputation and manipulation signals. | Python |
 
 ### 🛰️ Space Tech
 
@@ -144,7 +144,7 @@ I build AI systems that survive contact with reality — then publish the resear
 | **[CodeSentinel-v2](https://github.com/AravindB98/CodeSentinel-v2)** | CodeSentinel v2 — Multi-Agent AI System for Intelligent Code Review and Vulnerability Detection | Python |
 | **[Foglight](https://github.com/AravindB98/Foglight)** | All-seeing internet intelligence layer for agents and humans — pluggable channels, persistent memory, temporal knowledge graph, monitoring and cited synthesis. | Python |
 | **[RL_Codesentinel](https://github.com/AravindB98/RL_Codesentinel)** | Reinforcement learning for agentic code review — multi-agent reviewers that learn from developer feedback (contextual bandits + policy gradient, 200-episode × 5-seed evaluation). | Python |
-| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content& social media - provenance, claim verification, souce reputation & manipulation signals. | Python |
+| **[verifact](https://github.com/AravindB98/verifact)** | Open-source credibility engine for news, web content and social media - provenance, claim verification, source reputation and manipulation signals. | Python |
 | **[WardSight](https://github.com/AravindB98/WardSight)** | Open-source intelligence fusion platform with a citation-grounded AI analyst copilot (ADS-B/AIS/GDELT fusion, entity resolution, anomaly detection, grounded RAG). | Python |
 
 ### ⚛️ Quantum Computing
